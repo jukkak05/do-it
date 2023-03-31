@@ -2,7 +2,7 @@
 
 Simple tasks app with Deno & PostgreSQL. 
 
-https://deno.land/
+https://deno.land/  
 https://www.postgresql.org/
 
 This app is based on great free Web Developer course from Aalto University and a Walking Skeleton: 
