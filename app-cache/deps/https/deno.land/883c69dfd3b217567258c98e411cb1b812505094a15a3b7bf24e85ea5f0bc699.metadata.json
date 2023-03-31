@@ -1,0 +1,29 @@
+{
+  "headers": {
+    "x-amz-version-id": "oL6IWxZFfsFcrenuHMArSSa.zpmHWtzI",
+    "age": "351347",
+    "etag": "\"480c011ae67524efb1e8c4c5ff91ee8d\"",
+    "server-timing": "attempt;val=1,cdn-cache-hit,cdn-pop;desc=\"HEL50-C2\",cdn-rid;desc=\"iVngI89tV2entR0gBwzpyFVOfN-NC1DS_J3lvzp6e6AH_8CwllckAQ==\",cdn-hit-layer;desc=\"EDGE\",cdn-downstream-fbl;dur=3,fetchSource;dur=8",
+    "date": "Mon, 27 Mar 2023 15:16:17 GMT",
+    "server": "deno/gcp-europe-north1",
+    "x-cache": "Hit from cloudfront",
+    "access-control-allow-origin": "*",
+    "cache-control": "public, max-age=31536000, immutable",
+    "vary": "Accept-Encoding, Origin",
+    "content-length": "5500",
+    "content-type": "application/typescript; charset=utf-8",
+    "accept-ranges": "bytes",
+    "last-modified": "Mon, 17 Oct 2022 18:03:13 GMT",
+    "via": "http/2 edgeproxy-h",
+    "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "x-amz-cf-id": "iVngI89tV2entR0gBwzpyFVOfN-NC1DS_J3lvzp6e6AH_8CwllckAQ==",
+    "x-amz-cf-pop": "HEL50-C2",
+    "x-amz-server-side-encryption": "AES256",
+    "x-amz-replication-status": "COMPLETED"
+  },
+  "url": "https://deno.land/std@0.160.0/crypto/keystack.ts",
+  "now": {
+    "secs_since_epoch": 1680281524,
+    "nanos_since_epoch": 396912900
+  }
+}

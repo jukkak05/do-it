@@ -1,0 +1,20 @@
+<% layout("./layouts/layout-tasks.eta") %>
+<section class="tasks-list">
+    <ul>
+        <% it.tasks.forEach((task) => { %>
+            <li class="task" data-task-id="<%= task.id %>">
+                <h2 class="task-name"><%= task.name %></h2>
+                <form action="/tasks/del/<%= task.id %>" method="POST">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="#dbcca0" d="M416 256c0 17.7-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"/></svg>
+                    <input type="submit" value="">
+                </form>
+                <form action="/tasks/<%= task.id %>" method="GET">
+                    <input type="submit" value="">
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+</section>
+
+
+

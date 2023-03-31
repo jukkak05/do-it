@@ -1,0 +1,29 @@
+{
+  "headers": {
+    "content-type": "application/typescript; charset=utf-8",
+    "cache-control": "public, max-age=31536000, immutable",
+    "last-modified": "Mon, 17 Oct 2022 18:03:13 GMT",
+    "age": "2790145",
+    "server-timing": "attempt;val=1,cdn-cache-hit,cdn-pop;desc=\"HEL50-C2\",cdn-rid;desc=\"rqqwBNc7Lgp4Xgr60pbFsdRfBvwGWbNvqJhHmx7i2KoHzxVoDVGPQA==\",cdn-hit-layer;desc=\"EDGE\",cdn-downstream-fbl;dur=1,fetchSource;dur=14",
+    "content-length": "2140",
+    "server": "deno/gcp-europe-north1",
+    "x-cache": "Hit from cloudfront",
+    "via": "http/2 edgeproxy-h",
+    "x-amz-replication-status": "COMPLETED",
+    "x-amz-cf-id": "rqqwBNc7Lgp4Xgr60pbFsdRfBvwGWbNvqJhHmx7i2KoHzxVoDVGPQA==",
+    "content-security-policy": "default-src 'none'; style-src 'unsafe-inline'; sandbox",
+    "access-control-allow-origin": "*",
+    "x-amz-cf-pop": "HEL50-C2",
+    "x-amz-version-id": "ODXf8o_nBthdEiacQtlFrcCZKZr65kM_",
+    "vary": "Accept-Encoding, Origin",
+    "accept-ranges": "bytes",
+    "etag": "\"ec8ccf477330391054907b09bf826750\"",
+    "date": "Mon, 27 Feb 2023 09:49:38 GMT",
+    "x-amz-server-side-encryption": "AES256"
+  },
+  "url": "https://deno.land/std@0.160.0/async/debounce.ts",
+  "now": {
+    "secs_since_epoch": 1680281524,
+    "nanos_since_epoch": 385322200
+  }
+}

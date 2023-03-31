@@ -1,0 +1,383 @@
+/*               */
+/*  App Styles  */
+/*             */
+
+/* Variables
+========================================== */
+@bg-color: #e9e0c7;
+@button-color: #dbcca0;
+@text-color: #787465; 
+@heading-font: "Open Sans",sans-serif;
+@body-font: "Open Sans",sans-serif;
+@header-bg: url("/public/images/kolin-maisemat.webp");
+@border-radius: 5px; 
+
+/* Typography, colors
+========================================== */
+h1, 
+h2 {
+    font-family: @heading-font; 
+    color: @text-color; 
+    font-weight: 400; 
+}
+h1 {
+    font-size: 1.6rem; 
+    line-height: 2rem; 
+}
+h2 {
+    font-size: 1.2rem; 
+    line-height: 2.5rem; 
+    font-weight: 400;
+    color: @text-color;
+    margin: 0; 
+    &:hover {
+        color: darken(@text-color, 10%); 
+    }
+}
+a {
+    font-family: @body-font; 
+    color: @text-color; 
+    text-decoration: none;
+    font-size: 0.8rem; 
+    &:hover {
+        text-decoration: underline; 
+    } 
+}
+
+/* General
+========================================== */
+html, 
+body {
+    height: 100%; 
+}
+body {
+    background: @bg-color; 
+    margin: 0; 
+}
+footer {
+    margin-bottom: 100px;
+    margin: 0 auto; 
+    text-align: center;  
+}
+.home main {
+    margin-top: -245px; 
+}
+.single-task main {
+    margin-top: -315px; 
+}
+
+/* Header
+========================================== */
+header {
+    .add-task, 
+    .add-task-entry {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 580px; 
+        box-shadow: 0px 5px 17px #000;
+    }
+    background-image: @header-bg;
+    background-position-y: 49%; 
+}
+
+/* Login form
+========================================== */
+.login {
+    height: 100%; 
+    background: #e9e0c7;
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%; 
+        margin-top:-82px; 
+        h1 {
+            border-right: 2px dashed @text-color;
+            border-left: 2px dashed @text-color;
+            padding-left: 15px;
+            padding-right: 15px;
+            color: @text-color;
+        }
+        form {
+            display: flex; 
+            flex-direction: column; 
+            row-gap: 10px; 
+            position: relative; 
+            margin-bottom: 15px; 
+            input[type="password"] {
+                padding: 10px;
+                width: 250px;
+                height: 30px;
+                font-size: 18px;
+                font-family: "Open Sans", sans-serif;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                background: #fff;
+            }
+            input[type="submit"] {
+                display: none; 
+            }
+            svg {
+                position: absolute;
+                right: 10px;
+                width: 24px;
+                top: 12px;
+                z-index: 15; 
+                &:hover {
+                    cursor: pointer; 
+                    ~ input {
+                        filter: brightness(0.95);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Add task & task entries forms
+========================================== */
+.add-task form,
+.add-task-entry form { 
+    position: relative; 
+    input[type=text] {
+        padding: 10px; 
+        width: 540px;
+        height: 30px;
+        font-size: 18px; 
+        font-family: @body-font; 
+        color: @text-color;
+        outline: none; 
+        border: none; 
+        border-radius: @border-radius;
+    }
+    input[type=submit] {
+        padding: 10px;
+        font-weight: 600;
+        position: absolute;
+        right: 0;
+        width: 44px;
+        background: @button-color;
+        border: none;
+        height: 50px;
+        top: 0px;
+        border-radius: 0 @border-radius @border-radius 0; 
+        z-index: 10; 
+        &:hover {
+            cursor: pointer; 
+            filter: brightness(0.95);
+        }
+    }
+    svg {
+        position: absolute;
+        right: 10px;
+        width: 24px;
+        top: 12px;
+        z-index: 15; 
+        &:hover {
+            cursor: pointer; 
+            ~ input {
+                filter: brightness(0.95);
+            }
+        }
+    }
+}
+
+/* Tasks list
+========================================== */
+.tasks-list {
+    display: flex; 
+    justify-content: center; 
+    min-height: 460px; 
+    margin-bottom: 10px; 
+    form input[type=submit] {
+        padding: 10px;
+        font-weight: 600;
+        position: absolute;
+        right: 0;
+        width: 34px;
+        border: none; 
+        height: 34px;
+        top: 3px;
+        border-radius: 5px;
+        background: transparent; 
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    input {
+        outline: none; 
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        flex-basis: 460px;
+        background: #fff;
+        padding: 80px 50px;
+        border-radius: 5px;
+        margin-bottom: 0; 
+        li {
+            background: #fff;
+            position: relative; 
+            cursor:pointer;
+            padding: 0;
+            margin: 10px 0;
+            border-bottom: 1px solid #efefef;
+            width: 100%;
+            padding-bottom: 5px;
+            span {
+                font-size: 18px;
+                font-family: "Open Sans", sans-serif;
+            }
+            svg {
+                position: absolute;
+                right: 10px;
+                width: 14px;
+                top: 12px;
+                &:hover {
+                    cursor: pointer; 
+                    filter: brightness(0.95);
+                }
+            }
+        }
+    }
+    form[method="GET"] {
+        display: none; 
+    }
+}
+
+/* Tasks entries list
+========================================== */
+.task-entries-container {
+    position: relative; 
+    background: #fff; 
+    width: 560px; 
+    background: #fff;
+    margin: 0 auto; 
+    border-radius: @border-radius;
+    h1 {
+        border-bottom: 1px solid @bg-color;
+        padding-bottom: 20px;
+    }
+    .task-entries-list {
+        list-style: none;
+        min-height: 460px; 
+        padding: 40px 40px 100px 40px; ;
+        border-radius: 5px;
+        margin-bottom: 10px; 
+        form[name=add-entry] {
+            input {
+                border: 1px solid @bg-color !important; 
+            }
+            input[type=submit] {
+                background: #dbcca0;
+                height: 48px;
+                top: 0px;
+                border-radius: 0 5px 5px 0;
+                z-index: 10; 
+                right: -2px; 
+            }
+            svg {
+                position: absolute;
+                right: 8px;
+                width: 24px;
+                top: 10px;
+                z-index: 15; 
+                &:hover {
+                    cursor: pointer; 
+                    ~ input {
+                        filter: brightness(0.95);
+                    }
+                }
+            }
+        }
+        form {
+            position: relative; 
+            input[type=text] {
+                width: 100%;
+                height: 46px;
+                font-size: 18px;
+                font-family: "Open Sans", sans-serif;
+                color: #787465;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                padding: 0; 
+                text-indent: 10px; 
+            }
+            input[type=submit] {
+                padding: 10px;
+                font-weight: 600;
+                position: absolute;
+                right: -2px;
+                width: 44px;
+                background: none;
+                border: none;
+                height: 48px;
+                top: 0px;
+                border-radius: 0 5px 5px 0;
+                &:hover {
+                    cursor: pointer;
+                    filter: brightness(0.95);
+                }
+            }
+            svg {
+                position: absolute;
+                right: 7px;
+                width: 14px;
+                top: 10px;
+                &:hover {
+                    cursor: pointer; 
+                }
+            }
+        }
+        ul {
+            list-style: none;
+            padding-left: 0; 
+            margin-top: 30px; 
+            li {
+                background: #fff;
+                position: relative; 
+                padding: 0;
+                margin: 10px 0;
+                border-bottom: 1px solid #efefef;
+                width: 100%;
+                padding-bottom: 5px;
+                span {
+                    font-size: 18px;
+                    font-family: "Open Sans", sans-serif;
+                } 
+            }
+        }
+        a svg {
+            width: 34px; 
+            position: absolute;
+            bottom: 30px;
+            left: calc(50% - 15px);
+            &:hover {
+                filter: brightness(0.95);
+            }
+        }
+    }
+}
+
+/* Media Queries
+========================================== */
+@media screen and (max-width: 570px) {
+    .add-task form, 
+    .add-task form input[type="text"],
+    .task-entries-container, { 
+        width: calc(100% - 40px) !important;
+    }
+    .tasks-list ul {
+        flex-basis: 100%; 
+        margin: 0 20px; 
+    }
+}
