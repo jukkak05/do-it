@@ -39,7 +39,7 @@ It has a free tier for small applications, a great command line tool and demo ve
 You can find instructions for Fly.io deployment here:  
 https://fitech101.aalto.fi/web-software-development/15-deployment-iii/2-deployment-and-databases-using-fly/
 
-### Please note !
+## Please note
 
 This first version uses simple password and a cookie for login. This is not by any means a bullet-proof way as one could just add the correct cookie by looking at the source code. I'll add a more secure login in the future as i get more familiar with Deno. 
 
