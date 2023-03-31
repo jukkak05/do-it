@@ -25,7 +25,8 @@ If you are on a Windows like myself, i highly recommend installing WSL for Linux
 
 You'll also need Deno, Docker and Docker Compose. I also recommend using VS Code and Remote-WSL extension. 
 
-Check out WSD Course Tools for better instructions: https://fitech101.aalto.fi/web-software-development/1-introduction-and-tooling/4-course-tools/
+Check out WSD Course Tools for better instructions:  
+https://fitech101.aalto.fi/web-software-development/1-introduction-and-tooling/4-course-tools/
 
 You can also find more instructions on WSD-README.md
 
@@ -35,7 +36,8 @@ I recommend using: https://fly.io/
 
 It has a free tier for small applications, a great command line tool and demo version is also hosted there. 
 
-You can find instructions for Fly.io deployment here: https://fitech101.aalto.fi/web-software-development/15-deployment-iii/2-deployment-and-databases-using-fly/
+You can find instructions for Fly.io deployment here:  
+https://fitech101.aalto.fi/web-software-development/15-deployment-iii/2-deployment-and-databases-using-fly/
 
 ### Please note !
 
