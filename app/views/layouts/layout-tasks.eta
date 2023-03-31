@@ -27,7 +27,7 @@
         <%~ it.body %>
     </main>  
     <footer>
-      <a href="https://github.com/">Do It! - Simple tasks app with Deno & PostgreSQL</a>
+      <a href="https://github.com/jukkak05/do-it">Do It! - Simple tasks app with Deno & PostgreSQL</a>
     </footer>
   </body>
 </html>
